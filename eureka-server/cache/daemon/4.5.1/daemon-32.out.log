@@ -170,3 +170,13 @@
 2018-06-13 09:15:48.100  INFO 77 --- [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2018-06-13 09:15:48.195  INFO 77 --- [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 95 ms
 2018-06-13 09:15:51.723  INFO 77 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/2e58a6b75341:api-gateway with status UP (replication=false)
+2018-06-13 09:15:52.995  INFO 77 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/2e58a6b75341:api-gateway with status UP (replication=true)
+2018-06-13 09:16:25.362  INFO 77 --- [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NBA/72391c0afeb8:nba:8081 with status UP (replication=false)
+2018-06-13 09:16:25.879  INFO 77 --- [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NBA/72391c0afeb8:nba:8081 with status UP (replication=true)
+2018-06-13 09:16:39.861  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-13 09:17:39.862  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-13 09:18:39.862  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-13 09:19:39.861  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-13 09:20:39.861  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-13 09:21:39.862  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-06-13 09:22:39.942  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 79ms
