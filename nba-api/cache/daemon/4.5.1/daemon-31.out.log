@@ -1,62 +1,62 @@
-09:13:22.214 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonMain] Assuming the daemon was started with following jvm opts: [-XX:+HeapDumpOnOutOfMemoryError, -Xmx1024m, -Dfile.encoding=UTF-8, -Duser.country, -Duser.language=en, -Duser.variant]
-09:13:22.571 [INFO] [org.gradle.launcher.daemon.server.Daemon] start() called on daemon - DefaultDaemonContext[uid=15b58df5-28ed-4483-a56c-f94cb8ad7e03,javaHome=/opt/jdk1.8.0_172,daemonRegistryDir=/app/cache/daemon,pid=31,idleTimeout=10800000,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
-09:13:22.621 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface eth0
-09:13:22.627 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
-09:13:22.632 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
-09:13:22.638 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /172.21.0.4
-09:13:22.643 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote multicast interface eth0
-09:13:22.649 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface lo
-09:13:22.654 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? true
-09:13:22.661 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? false
-09:13:22.666 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /127.0.0.1
-09:13:22.676 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Listening on [6cdf04a9-b023-4a0c-9c1d-ac83e23a03f1 port:46727, addresses:[/127.0.0.1]].
-09:13:22.696 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] Daemon starting at: Wed Jun 13 09:13:22 GMT 2018, with address: [6cdf04a9-b023-4a0c-9c1d-ac83e23a03f1 port:46727, addresses:[/127.0.0.1]]
-09:13:22.703 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertising the daemon address to the clients: [6cdf04a9-b023-4a0c-9c1d-ac83e23a03f1 port:46727, addresses:[/127.0.0.1]]
-09:13:22.709 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertised daemon context: DefaultDaemonContext[uid=15b58df5-28ed-4483-a56c-f94cb8ad7e03,javaHome=/opt/jdk1.8.0_172,daemonRegistryDir=/app/cache/daemon,pid=31,idleTimeout=10800000,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
-09:13:22.716 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon address: [6cdf04a9-b023-4a0c-9c1d-ac83e23a03f1 port:46727, addresses:[/127.0.0.1]], context: DefaultDaemonContext[uid=15b58df5-28ed-4483-a56c-f94cb8ad7e03,javaHome=/opt/jdk1.8.0_172,daemonRegistryDir=/app/cache/daemon,pid=31,idleTimeout=10800000,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
-09:13:22.765 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
-09:13:22.779 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
-09:13:22.814 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
-09:13:22.822 [LIFECYCLE] [org.gradle.launcher.daemon.server.Daemon] Daemon server started.
-09:13:22.829 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonStartupCommunication] Completed writing the daemon greeting. Closing streams...
-09:13:22.845 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stopOnExpiration() called on daemon
-09:13:22.854 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] awaitExpiration() called on daemon
-09:13:22.865 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
-09:13:22.879 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:46940 to /127.0.0.1:46727.
-09:13:23.323 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: received class org.gradle.launcher.daemon.protocol.Build
-09:13:23.338 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 15: Received non-IO message from client: Build{id=29b95807-4f16-4dbd-9a37-c3971c38397a.1, currentDir=/app}
-09:13:23.348 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=29b95807-4f16-4dbd-9a37-c3971c38397a.1, currentDir=/app}.
-09:13:23.355 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=29b95807-4f16-4dbd-9a37-c3971c38397a.1, currentDir=/app} with connection: socket connection from /127.0.0.1:46727 to /127.0.0.1:46940.
-09:13:23.370 [ERROR] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=29b95807-4f16-4dbd-9a37-c3971c38397a.1, currentDir=/app}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:46727 to /127.0.0.1:46940] after 0.0 minutes of idle
-09:13:23.382 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [6cdf04a9-b023-4a0c-9c1d-ac83e23a03f1 port:46727, addresses:[/127.0.0.1]]
-09:13:23.388 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [6cdf04a9-b023-4a0c-9c1d-ac83e23a03f1 port:46727, addresses:[/127.0.0.1]]
-09:13:23.431 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
-09:13:23.442 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
-09:13:23.487 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
-09:13:23.500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
-09:13:23.507 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
-09:13:23.509 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=29b95807-4f16-4dbd-9a37-c3971c38397a.1, currentDir=/app}. Dispatching build started information...
-09:13:23.535 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 17: dispatching class org.gradle.launcher.daemon.protocol.BuildStarted
-09:13:23.562 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/jdk/bin, JAVA_JCE=unlimited, SPRING_PROFILES_ACTIVE=dev, JAVA_HOME=/opt/jdk, OLDPWD=/app, GLIBC_VERSION=2.27-r0, LANG=C.UTF-8, JAVA_VERSION_MAJOR=8, GRADLE_USER_HOME=cache, HOSTNAME=72391c0afeb8, GLIBC_REPO=https://github.com/sgerrand/alpine-pkg-glibc, JAVA_VERSION_MINOR=172, PWD=/app, JAVA_PACKAGE=jdk, JAVA_VERSION_BUILD=11, HOME=/root, SHLVL=1}
-09:13:23.580 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: received class org.gradle.launcher.daemon.protocol.CloseInput
-09:13:23.599 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 15: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@3629a8d3
-09:13:23.622 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
-09:13:23.631 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 31). The daemon log file: /app/cache/daemon/4.5.1/daemon-31.out.log
-09:13:23.657 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting build in new daemon [memory: 954.7 MB]
-09:13:23.666 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
-09:13:23.672 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
-09:13:23.682 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
-09:13:23.690 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=15b58df5-28ed-4483-a56c-f94cb8ad7e03,javaHome=/opt/jdk1.8.0_172,daemonRegistryDir=/app/cache/daemon,pid=31,idleTimeout=10800000,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+22:49:45.448 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonMain] Assuming the daemon was started with following jvm opts: [-XX:+HeapDumpOnOutOfMemoryError, -Xmx1024m, -Dfile.encoding=UTF-8, -Duser.country, -Duser.language=en, -Duser.variant]
+22:49:46.081 [INFO] [org.gradle.launcher.daemon.server.Daemon] start() called on daemon - DefaultDaemonContext[uid=2784d75b-95d2-41e0-a99b-20d6103cd871,javaHome=/opt/jdk1.8.0_172,daemonRegistryDir=/nba-api/cache/daemon,pid=31,idleTimeout=10800000,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+22:49:46.163 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface eth0
+22:49:46.171 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+22:49:46.176 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+22:49:46.181 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /172.21.0.4
+22:49:46.188 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote multicast interface eth0
+22:49:46.199 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface lo
+22:49:46.206 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? true
+22:49:46.212 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? false
+22:49:46.218 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /127.0.0.1
+22:49:46.237 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Listening on [5059a7ca-7fb8-45bc-9596-b9e527404a0b port:43661, addresses:[/127.0.0.1]].
+22:49:46.311 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] Daemon starting at: Thu Jun 14 22:49:46 GMT 2018, with address: [5059a7ca-7fb8-45bc-9596-b9e527404a0b port:43661, addresses:[/127.0.0.1]]
+22:49:46.319 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertising the daemon address to the clients: [5059a7ca-7fb8-45bc-9596-b9e527404a0b port:43661, addresses:[/127.0.0.1]]
+22:49:46.331 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertised daemon context: DefaultDaemonContext[uid=2784d75b-95d2-41e0-a99b-20d6103cd871,javaHome=/opt/jdk1.8.0_172,daemonRegistryDir=/nba-api/cache/daemon,pid=31,idleTimeout=10800000,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+22:49:46.344 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon address: [5059a7ca-7fb8-45bc-9596-b9e527404a0b port:43661, addresses:[/127.0.0.1]], context: DefaultDaemonContext[uid=2784d75b-95d2-41e0-a99b-20d6103cd871,javaHome=/opt/jdk1.8.0_172,daemonRegistryDir=/nba-api/cache/daemon,pid=31,idleTimeout=10800000,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+22:49:46.435 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+22:49:46.466 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+22:49:46.516 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+22:49:46.528 [LIFECYCLE] [org.gradle.launcher.daemon.server.Daemon] Daemon server started.
+22:49:46.542 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonStartupCommunication] Completed writing the daemon greeting. Closing streams...
+22:49:46.572 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stopOnExpiration() called on daemon
+22:49:46.587 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:48096 to /127.0.0.1:43661.
+22:49:46.608 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] awaitExpiration() called on daemon
+22:49:46.679 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+22:49:47.201 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: received class org.gradle.launcher.daemon.protocol.Build
+22:49:47.231 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 15: Received non-IO message from client: Build{id=0051c1d6-9d21-44d2-b855-582adc262f19.1, currentDir=/nba-api}
+22:49:47.241 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=0051c1d6-9d21-44d2-b855-582adc262f19.1, currentDir=/nba-api}.
+22:49:47.263 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=0051c1d6-9d21-44d2-b855-582adc262f19.1, currentDir=/nba-api} with connection: socket connection from /127.0.0.1:43661 to /127.0.0.1:48096.
+22:49:47.299 [ERROR] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=0051c1d6-9d21-44d2-b855-582adc262f19.1, currentDir=/nba-api}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:43661 to /127.0.0.1:48096] after 0.0 minutes of idle
+22:49:47.307 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [5059a7ca-7fb8-45bc-9596-b9e527404a0b port:43661, addresses:[/127.0.0.1]]
+22:49:47.322 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [5059a7ca-7fb8-45bc-9596-b9e527404a0b port:43661, addresses:[/127.0.0.1]]
+22:49:47.343 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+22:49:47.360 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+22:49:47.386 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+22:49:47.396 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+22:49:47.401 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+22:49:47.406 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=0051c1d6-9d21-44d2-b855-582adc262f19.1, currentDir=/nba-api}. Dispatching build started information...
+22:49:47.431 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 17: dispatching class org.gradle.launcher.daemon.protocol.BuildStarted
+22:49:47.458 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/jdk/bin, JAVA_JCE=unlimited, SPRING_PROFILES_ACTIVE=dev, JAVA_HOME=/opt/jdk, OLDPWD=/nba-api, GLIBC_VERSION=2.27-r0, LANG=C.UTF-8, JAVA_VERSION_MAJOR=8, GRADLE_USER_HOME=cache, HOSTNAME=057dd9d4d400, GLIBC_REPO=https://github.com/sgerrand/alpine-pkg-glibc, JAVA_VERSION_MINOR=172, PWD=/nba-api, JAVA_PACKAGE=jdk, JAVA_VERSION_BUILD=11, HOME=/root, SHLVL=1}
+22:49:47.549 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: received class org.gradle.launcher.daemon.protocol.CloseInput
+22:49:47.576 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 15: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@1691854e
+22:49:47.597 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+22:49:47.602 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 31). The daemon log file: /nba-api/cache/daemon/4.5.1/daemon-31.out.log
+22:49:47.614 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting build in new daemon [memory: 954.7 MB]
+22:49:47.621 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+22:49:47.635 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+22:49:47.702 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+22:49:47.760 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=2784d75b-95d2-41e0-a99b-20d6103cd871,javaHome=/opt/jdk1.8.0_172,daemonRegistryDir=/nba-api/cache/daemon,pid=31,idleTimeout=10800000,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
 :compileJava
-:processResources
+:processResources UP-TO-DATE
 :classes
 :bootRun
-09:14:52.235 [main] DEBUG org.springframework.boot.devtools.settings.DevToolsSettings - Included patterns for restart : []
-09:14:52.290 [main] DEBUG org.springframework.boot.devtools.settings.DevToolsSettings - Excluded patterns for restart : [/spring-boot-starter/target/classes/, /spring-boot-autoconfigure/target/classes/, /spring-boot-starter-[\w-]+/, /spring-boot/target/classes/, /spring-boot-actuator/target/classes/, /spring-boot-devtools/target/classes/]
-09:14:52.294 [main] DEBUG org.springframework.boot.devtools.restart.ChangeableUrls - Matching URLs for reloading : [file:/app/build/classes/java/main/, file:/app/build/resources/main/]
-2018-06-13 09:14:57.416  INFO 76 --- [  restartedMain] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@78192fbe: startup date [Wed Jun 13 09:14:57 GMT 2018]; root of context hierarchy
-2018-06-13 09:15:01.807  INFO 76 --- [  restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2018-06-13 09:15:02.431  INFO 76 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$17781543] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:51:02.836 [main] DEBUG org.springframework.boot.devtools.settings.DevToolsSettings - Included patterns for restart : []
+22:51:02.853 [main] DEBUG org.springframework.boot.devtools.settings.DevToolsSettings - Excluded patterns for restart : [/spring-boot-starter/target/classes/, /spring-boot-autoconfigure/target/classes/, /spring-boot-starter-[\w-]+/, /spring-boot/target/classes/, /spring-boot-actuator/target/classes/, /spring-boot-devtools/target/classes/]
+22:51:02.857 [main] DEBUG org.springframework.boot.devtools.restart.ChangeableUrls - Matching URLs for reloading : [file:/nba-api/build/classes/java/main/, file:/nba-api/build/resources/main/]
+2018-06-14 22:51:11.550  INFO 76 --- [  restartedMain] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68ff7b14: startup date [Thu Jun 14 22:51:11 GMT 2018]; root of context hierarchy
+2018-06-14 22:51:17.296  INFO 76 --- [  restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-06-14 22:51:18.758  INFO 76 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8932000] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -66,94 +66,458 @@
  =========|_|==============|___/=/_/_/_/
 [32m :: Spring Boot :: [39m      [2m (v1.5.8.RELEASE)[0;39m
 
-[2m2018-06-13 09:15:08.211[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.example.nbaapi.NbaApiApplication    [0;39m [2m:[0;39m The following profiles are active: dev
-[2m2018-06-13 09:15:08.616[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mationConfigEmbeddedWebApplicationContext[0;39m [2m:[0;39m Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@682af267: startup date [Wed Jun 13 09:15:08 GMT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@78192fbe
-[2m2018-06-13 09:15:27.487[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.cloud.context.scope.GenericScope    [0;39m [2m:[0;39m BeanFactory id=6e3dbed4-c7ab-39fd-aedf-289cd4271308
-[2m2018-06-13 09:15:27.936[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mf.a.AutowiredAnnotationBeanPostProcessor[0;39m [2m:[0;39m JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[2m2018-06-13 09:15:29.490[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mtrationDelegate$BeanPostProcessorChecker[0;39m [2m:[0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fb5e1246] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[2m2018-06-13 09:15:29.953[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mtrationDelegate$BeanPostProcessorChecker[0;39m [2m:[0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$17781543] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[2m2018-06-13 09:15:40.276[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36ms.b.c.e.t.TomcatEmbeddedServletContainer[0;39m [2m:[0;39m Tomcat initialized with port(s): 8081 (http)
-[2m2018-06-13 09:15:40.504[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
-[2m2018-06-13 09:15:40.524[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.apache.catalina.core.StandardEngine [0;39m [2m:[0;39m Starting Servlet Engine: Apache Tomcat/8.5.23
-[2m2018-06-13 09:15:44.794[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[ost-startStop-1][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
-[2m2018-06-13 09:15:44.795[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[ost-startStop-1][0;39m [36mo.s.web.context.ContextLoader           [0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 36179 ms
-[2m2018-06-13 09:15:45.865[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[ost-startStop-1][0;39m [36mo.s.b.w.servlet.ServletRegistrationBean [0;39m [2m:[0;39m Mapping servlet: 'dispatcherServlet' to [/]
-[2m2018-06-13 09:15:45.904[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[ost-startStop-1][0;39m [36mo.s.b.w.servlet.FilterRegistrationBean  [0;39m [2m:[0;39m Mapping filter: 'characterEncodingFilter' to: [/*]
-[2m2018-06-13 09:15:45.905[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[ost-startStop-1][0;39m [36mo.s.b.w.servlet.FilterRegistrationBean  [0;39m [2m:[0;39m Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-[2m2018-06-13 09:15:45.906[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[ost-startStop-1][0;39m [36mo.s.b.w.servlet.FilterRegistrationBean  [0;39m [2m:[0;39m Mapping filter: 'httpPutFormContentFilter' to: [/*]
-[2m2018-06-13 09:15:45.906[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[ost-startStop-1][0;39m [36mo.s.b.w.servlet.FilterRegistrationBean  [0;39m [2m:[0;39m Mapping filter: 'requestContextFilter' to: [/*]
-[2m2018-06-13 09:15:51.090[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Building JPA container EntityManagerFactory for persistence unit 'default'
-[2m2018-06-13 09:15:51.297[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.hibernate.jpa.internal.util.LogHelper [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [
+[2m2018-06-14 22:51:25.441[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.example.nbaapi.NbaApiApplication    [0;39m [2m:[0;39m The following profiles are active: dev
+[2m2018-06-14 22:51:25.771[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mationConfigEmbeddedWebApplicationContext[0;39m [2m:[0;39m Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@55c67168: startup date [Thu Jun 14 22:51:25 GMT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@68ff7b14
+[2m2018-06-14 22:51:45.598[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.cloud.context.scope.GenericScope    [0;39m [2m:[0;39m BeanFactory id=1c9e8799-a9d6-3984-a4b2-63096011a2bb
+[2m2018-06-14 22:51:45.775[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mf.a.AutowiredAnnotationBeanPostProcessor[0;39m [2m:[0;39m JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[2m2018-06-14 22:51:47.350[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mtrationDelegate$BeanPostProcessorChecker[0;39m [2m:[0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ec791d03] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2m2018-06-14 22:51:47.711[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mtrationDelegate$BeanPostProcessorChecker[0;39m [2m:[0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8932000] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2m2018-06-14 22:51:52.972[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36ms.b.c.e.t.TomcatEmbeddedServletContainer[0;39m [2m:[0;39m Tomcat initialized with port(s): 8081 (http)
+[2m2018-06-14 22:51:53.373[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2018-06-14 22:51:53.385[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.apache.catalina.core.StandardEngine [0;39m [2m:[0;39m Starting Servlet Engine: Apache Tomcat/8.5.23
+[2m2018-06-14 22:51:55.132[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[ost-startStop-1][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2m2018-06-14 22:51:55.171[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[ost-startStop-1][0;39m [36mo.s.web.context.ContextLoader           [0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 29400 ms
+[2m2018-06-14 22:51:57.882[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[ost-startStop-1][0;39m [36mo.s.b.w.servlet.ServletRegistrationBean [0;39m [2m:[0;39m Mapping servlet: 'dispatcherServlet' to [/]
+[2m2018-06-14 22:51:58.079[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[ost-startStop-1][0;39m [36mo.s.b.w.servlet.FilterRegistrationBean  [0;39m [2m:[0;39m Mapping filter: 'characterEncodingFilter' to: [/*]
+[2m2018-06-14 22:51:58.096[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[ost-startStop-1][0;39m [36mo.s.b.w.servlet.FilterRegistrationBean  [0;39m [2m:[0;39m Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2m2018-06-14 22:51:58.149[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[ost-startStop-1][0;39m [36mo.s.b.w.servlet.FilterRegistrationBean  [0;39m [2m:[0;39m Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2m2018-06-14 22:51:58.160[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[ost-startStop-1][0;39m [36mo.s.b.w.servlet.FilterRegistrationBean  [0;39m [2m:[0;39m Mapping filter: 'requestContextFilter' to: [/*]
+[2m2018-06-14 22:52:04.347[0;39m [31mERROR[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.tomcat.jdbc.pool.ConnectionPool     [0;39m [2m:[0;39m Unable to create initial connections of pool.
+
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:215) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	at org.postgresql.Driver.makeConnection(Driver.java:404) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	at org.postgresql.Driver.connect(Driver.java:272) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131) [tomcat-jdbc-8.5.23.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111) [spring-jdbc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77) [spring-jdbc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:326) [spring-jdbc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:366) [spring-jdbc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72) [spring-boot-autoconfigure-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:139) [spring-boot-autoconfigure-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:105) [spring-boot-autoconfigure-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$55ff8123.CGLIB$jpaVendorAdapter$3(<generated>) [spring-boot-autoconfigure-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$55ff8123$$FastClassBySpringCGLIB$$2bad5d98.invoke(<generated>) [spring-boot-autoconfigure-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [spring-core-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358) [spring-context-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$55ff8123.jpaVendorAdapter(<generated>) [spring-boot-autoconfigure-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078) [spring-context-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) [spring-context-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) [spring-context-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at com.example.nbaapi.NbaApiApplication.main(NbaApiApplication.java:28) [main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_172]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_172]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_172]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_172]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_172]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_172]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:61) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	... 82 common frames omitted
+
+[2m2018-06-14 22:52:04.532[0;39m [33m WARN[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.a.orm.jpa.DatabaseLookup          [0;39m [2m:[0;39m Unable to determine jdbc url from datasource
+
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:339) ~[spring-jdbc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:366) ~[spring-jdbc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72) ~[spring-boot-autoconfigure-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:139) [spring-boot-autoconfigure-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:105) [spring-boot-autoconfigure-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$55ff8123.CGLIB$jpaVendorAdapter$3(<generated>) [spring-boot-autoconfigure-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$55ff8123$$FastClassBySpringCGLIB$$2bad5d98.invoke(<generated>) [spring-boot-autoconfigure-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [spring-core-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358) [spring-context-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$55ff8123.jpaVendorAdapter(<generated>) [spring-boot-autoconfigure-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078) [spring-context-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) [spring-context-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) [spring-context-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at com.example.nbaapi.NbaApiApplication.main(NbaApiApplication.java:28) [main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:326) ~[spring-jdbc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	... 66 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:215) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	at org.postgresql.Driver.makeConnection(Driver.java:404) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	at org.postgresql.Driver.connect(Driver.java:272) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111) ~[spring-jdbc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77) ~[spring-jdbc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	... 67 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_172]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_172]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_172]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_172]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_172]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_172]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:61) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	... 82 common frames omitted
+
+[2m2018-06-14 22:52:05.443[0;39m [31mERROR[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.tomcat.jdbc.pool.ConnectionPool     [0;39m [2m:[0;39m Unable to create initial connections of pool.
+
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:215) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	at org.postgresql.Driver.makeConnection(Driver.java:404) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	at org.postgresql.Driver.connect(Driver.java:272) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131) [tomcat-jdbc-8.5.23.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111) [spring-jdbc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77) [spring-jdbc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:342) [spring-jdbc-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.boot.autoconfigure.jdbc.EmbeddedDatabaseConnection.isEmbedded(EmbeddedDatabaseConnection.java:137) [spring-boot-autoconfigure-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Hibernate.getDefaultDdlAuto(JpaProperties.java:226) [spring-boot-autoconfigure-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Hibernate.getOrDeduceDdlAuto(JpaProperties.java:214) [spring-boot-autoconfigure-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Hibernate.getAdditionalProperties(JpaProperties.java:190) [spring-boot-autoconfigure-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Hibernate.access$000(JpaProperties.java:142) [spring-boot-autoconfigure-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.getHibernateProperties(JpaProperties.java:126) [spring-boot-autoconfigure-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration.getVendorProperties(HibernateJpaAutoConfiguration.java:104) [spring-boot-autoconfigure-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.entityManagerFactory(JpaBaseConfiguration.java:129) [spring-boot-autoconfigure-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$55ff8123.CGLIB$entityManagerFactory$4(<generated>) [spring-boot-autoconfigure-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$55ff8123$$FastClassBySpringCGLIB$$2bad5d98.invoke(<generated>) [spring-boot-autoconfigure-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [spring-core-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358) [spring-context-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$55ff8123.entityManagerFactory(<generated>) [spring-boot-autoconfigure-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078) [spring-context-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) [spring-context-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) [spring-context-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at com.example.nbaapi.NbaApiApplication.main(NbaApiApplication.java:28) [main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_172]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_172]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_172]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_172]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_172]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_172]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:61) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	... 58 common frames omitted
+
+[2m2018-06-14 22:52:09.779[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Building JPA container EntityManagerFactory for persistence unit 'default'
+[2m2018-06-14 22:52:10.620[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.hibernate.jpa.internal.util.LogHelper [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-[2m2018-06-13 09:15:52.221[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.Version                   [0;39m [2m:[0;39m HHH000412: Hibernate Core {5.0.12.Final}
-[2m2018-06-13 09:15:52.227[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.cfg.Environment           [0;39m [2m:[0;39m HHH000206: hibernate.properties not found
-[2m2018-06-13 09:15:52.239[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.cfg.Environment           [0;39m [2m:[0;39m HHH000021: Bytecode provider name : javassist
-[2m2018-06-13 09:15:53.017[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.hibernate.annotations.common.Version  [0;39m [2m:[0;39m HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-[2m2018-06-13 09:15:54.107[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.Dialect           [0;39m [2m:[0;39m HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[2m2018-06-13 09:15:55.701[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.e.j.e.i.LobCreatorBuilderImpl       [0;39m [2m:[0;39m HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
-[2m2018-06-13 09:15:55.710[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.type.BasicTypeRegistry    [0;39m [2m:[0;39m HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@33a07081
-[2m2018-06-13 09:15:59.940[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
-[2m2018-06-13 09:16:04.143[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 
-[2m2018-06-13 09:16:04.217[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService  'asyncExecutor'
-[2m2018-06-13 09:16:06.153[0;39m [33m WARN[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m No URLs will be polled as dynamic configuration sources.
-[2m2018-06-13 09:16:06.153[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-[2m2018-06-13 09:16:06.199[0;39m [33m WARN[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m No URLs will be polled as dynamic configuration sources.
-[2m2018-06-13 09:16:06.200[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-[2m2018-06-13 09:16:09.165[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36ms.w.s.m.m.a.RequestMappingHandlerAdapter[0;39m [2m:[0;39m Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@682af267: startup date [Wed Jun 13 09:15:08 GMT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@78192fbe
-[2m2018-06-13 09:16:10.160[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36ms.w.s.m.m.a.RequestMappingHandlerMapping[0;39m [2m:[0;39m Mapped "{[/]}" onto public java.lang.String com.example.nbaapi.NbaApiApplication.home()
-[2m2018-06-13 09:16:10.239[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36ms.w.s.m.m.a.RequestMappingHandlerMapping[0;39m [2m:[0;39m Mapped "{[/api/games],methods=[GET]}" onto public java.lang.Iterable<com.example.nbaapi.models.Game> com.example.nbaapi.controllers.GamesController.findAllGames()
-[2m2018-06-13 09:16:10.289[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36ms.w.s.m.m.a.RequestMappingHandlerMapping[0;39m [2m:[0;39m Mapped "{[/api/games/{alias}],methods=[GET]}" onto public java.lang.Iterable<com.example.nbaapi.models.Game> com.example.nbaapi.controllers.GamesController.findGameByAlias(java.lang.String)
-[2m2018-06-13 09:16:10.380[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36ms.w.s.m.m.a.RequestMappingHandlerMapping[0;39m [2m:[0;39m Mapped "{[/api/gameboxscore/{game_id}],methods=[GET],produces=[application/json]}" onto public java.lang.String com.example.nbaapi.controllers.GamesScoreController.getBoxScore(java.lang.String) throws java.io.IOException
-[2m2018-06-13 09:16:10.385[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36ms.w.s.m.m.a.RequestMappingHandlerMapping[0;39m [2m:[0;39m Mapped "{[/api/gameboxsummary/{game_id}],methods=[GET],produces=[application/json]}" onto public java.lang.String com.example.nbaapi.controllers.GamesScoreController.getSummary(java.lang.String) throws java.io.IOException
-[2m2018-06-13 09:16:10.386[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36ms.w.s.m.m.a.RequestMappingHandlerMapping[0;39m [2m:[0;39m Mapped "{[/api/seasonalstats/{team_id}],methods=[GET],produces=[application/json]}" onto public java.lang.String com.example.nbaapi.controllers.GamesScoreController.getSeasonalStats(java.lang.String) throws java.io.IOException
-[2m2018-06-13 09:16:10.387[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36ms.w.s.m.m.a.RequestMappingHandlerMapping[0;39m [2m:[0;39m Mapped "{[/api/seasonalstanding],methods=[GET],produces=[application/json]}" onto public java.lang.String com.example.nbaapi.controllers.GamesScoreController.getSeasonalStanding() throws java.io.IOException
-[2m2018-06-13 09:16:10.388[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36ms.w.s.m.m.a.RequestMappingHandlerMapping[0;39m [2m:[0;39m Mapped "{[/api/playbyplay/{game_id}],methods=[GET],produces=[application/json]}" onto public java.lang.String com.example.nbaapi.controllers.GamesScoreController.getPlayByPlay(java.lang.String) throws java.io.IOException
-[2m2018-06-13 09:16:10.389[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36ms.w.s.m.m.a.RequestMappingHandlerMapping[0;39m [2m:[0;39m Mapped "{[/api/roster/{team_id}],methods=[GET],produces=[application/json]}" onto public java.lang.String com.example.nbaapi.controllers.GamesScoreController.getRoster(java.lang.String) throws java.io.IOException
-[2m2018-06-13 09:16:10.390[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36ms.w.s.m.m.a.RequestMappingHandlerMapping[0;39m [2m:[0;39m Mapped "{[/api/news/{team_name}],methods=[GET],produces=[application/json]}" onto public java.lang.String com.example.nbaapi.controllers.GamesScoreController.getNews(java.lang.String) throws java.io.IOException
-[2m2018-06-13 09:16:10.407[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36ms.w.s.m.m.a.RequestMappingHandlerMapping[0;39m [2m:[0;39m Mapped "{[/standingstest],methods=[GET]}" onto public java.lang.String com.example.nbaapi.controllers.StandingsController.returnRandomString()
-[2m2018-06-13 09:16:10.410[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36ms.w.s.m.m.a.RequestMappingHandlerMapping[0;39m [2m:[0;39m Mapped "{[/standings],methods=[GET],produces=[application/json]}" onto public java.lang.String com.example.nbaapi.controllers.StandingsController.getStanding() throws java.io.IOException,java.lang.InterruptedException,java.util.concurrent.ExecutionException
-[2m2018-06-13 09:16:10.469[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36ms.w.s.m.m.a.RequestMappingHandlerMapping[0;39m [2m:[0;39m Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-[2m2018-06-13 09:16:10.471[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36ms.w.s.m.m.a.RequestMappingHandlerMapping[0;39m [2m:[0;39m Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-[2m2018-06-13 09:16:10.699[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.w.s.handler.SimpleUrlHandlerMapping [0;39m [2m:[0;39m Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[2m2018-06-13 09:16:10.699[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.w.s.handler.SimpleUrlHandlerMapping [0;39m [2m:[0;39m Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[2m2018-06-13 09:16:11.581[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.w.s.handler.SimpleUrlHandlerMapping [0;39m [2m:[0;39m Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[2m2018-06-13 09:16:16.025[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[2m2018-06-13 09:16:17.823[0;39m [33m WARN[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36marterDeprecationWarningAutoConfiguration[0;39m [2m:[0;39m spring-cloud-starter-eureka is deprecated as of Spring Cloud Netflix 1.4.0, please migrate to spring-cloud-starter-netflix-eureka
-[2m2018-06-13 09:16:18.281[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.j.e.a.AnnotationMBeanExporter       [0;39m [2m:[0;39m Registering beans for JMX exposure on startup
-[2m2018-06-13 09:16:18.317[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.j.e.a.AnnotationMBeanExporter       [0;39m [2m:[0;39m Bean with name 'environmentManager' has been autodetected for JMX exposure
-[2m2018-06-13 09:16:18.321[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.j.e.a.AnnotationMBeanExporter       [0;39m [2m:[0;39m Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
-[2m2018-06-13 09:16:18.326[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.j.e.a.AnnotationMBeanExporter       [0;39m [2m:[0;39m Bean with name 'refreshScope' has been autodetected for JMX exposure
-[2m2018-06-13 09:16:18.340[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.j.e.a.AnnotationMBeanExporter       [0;39m [2m:[0;39m Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
-[2m2018-06-13 09:16:18.396[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.j.e.a.AnnotationMBeanExporter       [0;39m [2m:[0;39m Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
-[2m2018-06-13 09:16:18.483[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.j.e.a.AnnotationMBeanExporter       [0;39m [2m:[0;39m Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=682af267,type=ConfigurationPropertiesRebinder]
-[2m2018-06-13 09:16:19.116[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.c.support.DefaultLifecycleProcessor [0;39m [2m:[0;39m Starting beans in phase 0
-[2m2018-06-13 09:16:19.637[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.c.n.eureka.InstanceInfoFactory      [0;39m [2m:[0;39m Setting initial instance status as: STARTING
-[2m2018-06-13 09:16:20.075[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Initializing Eureka in region us-east-1
-[2m2018-06-13 09:16:21.122[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using JSON encoding codec LegacyJacksonJson
-[2m2018-06-13 09:16:21.122[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using JSON decoding codec LegacyJacksonJson
-[2m2018-06-13 09:16:21.980[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using XML encoding codec XStreamXml
-[2m2018-06-13 09:16:21.980[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using XML decoding codec XStreamXml
-[2m2018-06-13 09:16:23.576[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
-[2m2018-06-13 09:16:23.688[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Disable delta property : false
-[2m2018-06-13 09:16:23.688[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Single vip registry refresh property : null
-[2m2018-06-13 09:16:23.689[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Force full registry fetch : false
-[2m2018-06-13 09:16:23.689[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Application is null : false
-[2m2018-06-13 09:16:23.689[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Registered Applications size is zero : true
-[2m2018-06-13 09:16:23.689[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Application version is -1: true
-[2m2018-06-13 09:16:23.689[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Getting all instance registry info from the eureka server
-[2m2018-06-13 09:16:24.711[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m The response status is 200
-[2m2018-06-13 09:16:24.720[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Starting heartbeat executor: renew interval is: 30
-[2m2018-06-13 09:16:24.741[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.n.discovery.InstanceInfoReplicator    [0;39m [2m:[0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
-[2m2018-06-13 09:16:24.773[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Discovery Client initialized at timestamp 1528881384772 with initial instances count: 1
-[2m2018-06-13 09:16:24.904[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.c.n.e.s.EurekaServiceRegistry       [0;39m [2m:[0;39m Registering application nba with eureka with status UP
-[2m2018-06-13 09:16:24.908[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Saw local status change event StatusChangeEvent [timestamp=1528881384907, current=UP, previous=STARTING]
-[2m2018-06-13 09:16:24.923[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_NBA/72391c0afeb8:nba:8081: registering service...
-[2m2018-06-13 09:16:25.372[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_NBA/72391c0afeb8:nba:8081 - registration status: 204
-[2m2018-06-13 09:16:25.489[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36ms.b.c.e.t.TomcatEmbeddedServletContainer[0;39m [2m:[0;39m Tomcat started on port(s): 8081 (http)
-[2m2018-06-13 09:16:25.491[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.s.c.n.e.s.EurekaAutoServiceRegistration[0;39m [2m:[0;39m Updating port to 8081
-[2m2018-06-13 09:16:25.561[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.example.nbaapi.NbaApiApplication    [0;39m [2m:[0;39m Started NbaApiApplication in 92.787 seconds (JVM running for 103.166)
-[2m2018-06-13 09:17:29.574[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[nio-8081-exec-1][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring FrameworkServlet 'dispatcherServlet'
-[2m2018-06-13 09:17:29.575[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[nio-8081-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m FrameworkServlet 'dispatcherServlet': initialization started
-[2m2018-06-13 09:17:29.637[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[nio-8081-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m FrameworkServlet 'dispatcherServlet': initialization completed in 62 ms
-[2m2018-06-13 09:21:23.708[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2018-06-14 22:52:12.670[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.Version                   [0;39m [2m:[0;39m HHH000412: Hibernate Core {5.0.12.Final}
+[2m2018-06-14 22:52:12.772[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.cfg.Environment           [0;39m [2m:[0;39m HHH000206: hibernate.properties not found
+[2m2018-06-14 22:52:12.801[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.cfg.Environment           [0;39m [2m:[0;39m HHH000021: Bytecode provider name : javassist
+[2m2018-06-14 22:52:13.267[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.hibernate.annotations.common.Version  [0;39m [2m:[0;39m HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[2m2018-06-14 22:52:15.644[0;39m [31mERROR[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.tomcat.jdbc.pool.ConnectionPool     [0;39m [2m:[0;39m Unable to create initial connections of pool.
+
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:215) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	at org.postgresql.Driver.makeConnection(Driver.java:404) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	at org.postgresql.Driver.connect(Driver.java:272) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131) [tomcat-jdbc-8.5.23.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:254) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:228) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111) [hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:847) [hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:874) [hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60) [spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353) [spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:370) [spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:359) [spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078) [spring-context-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) [spring-context-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) [spring-context-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at com.example.nbaapi.NbaApiApplication.main(NbaApiApplication.java:28) [main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_172]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_172]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_172]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_172]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_172]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_172]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:61) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144) ~[postgresql-9.4.1212.jre7.jar:9.4.1212.jre7]
+	... 56 common frames omitted
+
+[2m2018-06-14 22:52:15.675[0;39m [33m WARN[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.e.j.e.i.JdbcEnvironmentInitiator    [0;39m [2m:[0;39m HHH000342: Could not obtain connection to query metadata : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+[2m2018-06-14 22:52:15.708[0;39m [33m WARN[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mationConfigEmbeddedWebApplicationContext[0;39m [2m:[0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[2m2018-06-14 22:52:15.715[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Stopping service [Tomcat]
+[2m2018-06-14 22:52:16.286[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mutoConfigurationReportLoggingInitializer[0;39m [2m:[0;39m 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[2m2018-06-14 22:52:16.425[0;39m [31mERROR[0;39m [35m76[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.boot.SpringApplication              [0;39m [2m:[0;39m Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078) ~[spring-context-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at com.example.nbaapi.NbaApiApplication.main(NbaApiApplication.java:28) [main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:228) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:847) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:874) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:370) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:359) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	... 21 common frames omitted
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:137) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:254) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	... 37 common frames omitted
+
+
+BUILD SUCCESSFUL in 2m 43s
+3 actionable tasks: 2 executed, 1 up-to-date
+22:52:17.784 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+22:52:17.802 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+22:52:17.837 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=0051c1d6-9d21-44d2-b855-582adc262f19.1, currentDir=/nba-api}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:43661 to /127.0.0.1:48096]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@6230a276 with state Busy
+22:52:17.848 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=0051c1d6-9d21-44d2-b855-582adc262f19.1, currentDir=/nba-api}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:43661 to /127.0.0.1:48096]
+22:52:17.860 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+22:52:17.880 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [5059a7ca-7fb8-45bc-9596-b9e527404a0b port:43661, addresses:[/127.0.0.1]]
+22:52:17.919 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [5059a7ca-7fb8-45bc-9596-b9e527404a0b port:43661, addresses:[/127.0.0.1]]
+22:52:17.965 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+22:52:18.014 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+22:52:18.059 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+22:52:18.082 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+22:52:18.085 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=null]
+22:52:18.101 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 14: dispatching class org.gradle.launcher.daemon.protocol.Success
+22:52:18.142 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=0051c1d6-9d21-44d2-b855-582adc262f19.1, currentDir=/nba-api}
+22:52:18.168 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: received class org.gradle.launcher.daemon.protocol.Finished
+22:52:18.212 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 15: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@234db3fa
+22:52:18.234 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+22:52:18.235 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@234db3fa
+22:52:18.279 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 14: stopping connection
+22:52:18.252 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: received null
+22:52:18.318 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 15: Received end-of-input from client.
+22:52:18.326 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 14: stopping connection
+22:52:18.549 [DEBUG] [org.gradle.process.internal.health.memory.MemoryManager] Emitting OS memory status event {Total: 4139012096, Free: 1322176512}
+22:52:18.621 [DEBUG] [org.gradle.launcher.daemon.server.health.LowMemoryDaemonExpirationStrategy] Received memory status update: {Total: 4139012096, Free: 1322176512}
+22:52:18.645 [DEBUG] [org.gradle.process.internal.health.memory.MemoryManager] Emitting JVM memory status event {Maximum: 954728448, Committed: 260046848}

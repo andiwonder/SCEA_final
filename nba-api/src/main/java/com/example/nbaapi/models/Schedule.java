@@ -1,4 +1,4 @@
-package com.example.nbaapi.models;
+//package com.example.nbaapi.models;
 
 //import lombok.*;
 //import javax.persistence.*;
