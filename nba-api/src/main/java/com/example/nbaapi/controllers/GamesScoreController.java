@@ -30,6 +30,11 @@ public class GamesScoreController {
     @Value("${NEWS_API_KEY}")
     private String news_api_key;
 
+    @GetMapping("/random")
+    public String findAllUsers() {
+        return "hello world!";
+    }
+
     // In order to return custom json not mapped to an object you ahve to return it as a string, and add
     // the annotations above
     @GetMapping(value="/gameboxscore/{game_id}", produces= MediaType.APPLICATION_JSON_VALUE)
